@@ -1,4 +1,5 @@
 const fs = require('fs');
+const http = require('http');
 
 // fs.writeFile("hey.txt","How r u bro",function(err){
 //     if(err) console.log("Not done");
@@ -25,3 +26,12 @@ fs.readFile("hello.txt", "utf8", function(err, data) {
         console.log("File contents:", data);
     }
 });
+
+
+//HTTP:- this is used for koi bi chiz internet p bhejne or recive karne k liye is http protocol ki need hoti h iske bina hum net p kuch nhi kar sakte
+
+const server = http.createServer((req,res)=>{
+    res.end("Hello World")
+})
+
+server.listen(3000);
