@@ -35,3 +35,11 @@ const server = http.createServer((req,res)=>{
 })
 
 server.listen(3000);
+
+// what is Dependancy 
+// packages and packages ki dependancy means ki vo kis packages p depend h ye sab h
+
+// what is DevDependancy 
+// Aise packages jo sirf development m kaam aayenge or jab hum application ko deploy kar denge to ye packages bi hatt jayegnge
+
+
